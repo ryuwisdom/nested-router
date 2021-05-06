@@ -17,5 +17,6 @@ export default {
   border: 4px solid deeppink;
   display: flex;
   justify-content: center;
+  align-content: center;
 }
 </style>
