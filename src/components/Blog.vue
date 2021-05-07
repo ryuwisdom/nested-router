@@ -10,12 +10,11 @@ name: "Blog"
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+@import '~@/assets/scss/common.scss';
 .blog-container {
-  width: 800px;
-  height: 700px;
-  border: 4px solid darkmagenta;
-  display: flex;
-  justify-content: center;
+  @include setSize(800px, 700px);
+  @include setBorder(4px, solid, $-blog );
+  @include flexRow(center, center)
 }
 </style>

@@ -10,13 +10,11 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+@import '~@/assets/scss/common.scss';
 .disclosure-container {
-  width: 800px;
-  height: 700px;
-  border: 4px solid deeppink;
-  display: flex;
-  justify-content: center;
-  align-content: center;
+  @include setSize(800px, 700px);
+  @include setBorder(4px, solid, $-disclosure );
+  @include flexRow(center, center)
 }
 </style>

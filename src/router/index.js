@@ -13,8 +13,8 @@ const routes = [
     component: Home,
     children : [
       {name:'disclosure', path: 'disclosure', component: Disclosure},
-      {name:'keyinfo',path: 'home/keyinfo', component: KeyInfo},
-      {name:'blog',path: 'home/blog', component: Blog},
+      {name:'keyInfo',path: 'keyInfo', component: KeyInfo},
+      {name:'blog',path: 'blog', component: Blog},
       {path: '', redirect: 'disclosure'},
     ]
   },
@@ -22,8 +22,8 @@ const routes = [
 ]
 
 const router = new VueRouter({
-  routes,
   mode: 'history',
+  routes,
 })
 
 export default router

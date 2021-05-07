@@ -1,0 +1,39 @@
+/* theme color */
+
+$-category : #bdc3c7;
+$-disclosure : #FF0099;
+$-key-info : #4286f4;
+$-blog: #ec2F4B;
+$font : #203A43;
+$white : #fff;
+
+@mixin flexRow ($justify, $align){
+  display: flex;
+  flex-direction: row;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin flexCol ($justify, $align){
+  display: flex;
+  flex-direction: column;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin setSize($-width, $-height){
+  height: $-height;
+  width: $-width;
+}
+
+@mixin setBorder($-width, $-style, $-color){
+  border-width: $-width;
+  border-style: $-style;
+  border-color: $-color;
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  font-weight:400;
+  src: url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap') format("woff2");
+}
