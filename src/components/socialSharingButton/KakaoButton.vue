@@ -1,5 +1,5 @@
 <template>
-<div class="share-button" >
+<div class="share-button">
       <a id="create-kakao-link-btn" href="javascript:;">
         <img
           src="https://developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png"

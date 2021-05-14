@@ -13,23 +13,24 @@
             :key="category.path"
         >
           <p>{{ category.path }}</p>
+
         </router-link>
+
       </main>
     </div>
     <div class="child-components">
       <router-view></router-view>
     </div>
     <div>
-      <sms-sharing-button-group></sms-sharing-button-group>
+      <sns-sharing-button-group></sns-sharing-button-group>
     </div>
   </div>
 </template>
 
 <script>
-
-import SmsSharingButtonGroup from "@/components/SmsSharingButtonGroup";
+import SnsSharingButtonGroup from "@/components/SnsSharingButtonGroup";
 export default {
-  components: {SmsSharingButtonGroup},
+  components: {SnsSharingButtonGroup},
   data() {
     return {
       categories: [
