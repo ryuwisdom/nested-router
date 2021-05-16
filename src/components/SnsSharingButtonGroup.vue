@@ -16,6 +16,8 @@ name: "SnsSharingButtonGroup",
 }
 </script>
 
-<style scoped>
-
+<style lnag="scss" scoped>
+.sns-share-btn-group {
+  display: flex;
+}
 </style>

@@ -23,21 +23,27 @@
     </div>
     <div>
       <sns-sharing-button-group></sns-sharing-button-group>
+      <url-copy></url-copy>
+      <button id="show-modal" @click="showModal = true">share</button>
+      <modal v-if="showModal" @close="showModal = false"></modal>
     </div>
   </div>
 </template>
 
 <script>
 import SnsSharingButtonGroup from "@/components/SnsSharingButtonGroup";
+import UrlCopy from "@/components/UrlCopy";
+import Modal from "@/components/Modal";
 export default {
-  components: {SnsSharingButtonGroup},
+  components: {Modal, UrlCopy, SnsSharingButtonGroup},
   data() {
     return {
       categories: [
         {path: 'disclosure'},
         {path: 'keyInfo'},
         {path: 'blog'},
-      ]
+      ],
+      showModal: false
     }
   },
 }
